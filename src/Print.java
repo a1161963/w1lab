@@ -32,6 +32,15 @@ public class Print {
 
     }
 
+    static void eight(){
+        for (int i = 100;;){
+            if ((i%5)== 0 && (i%6)!=0 || (i%5)!=0 && (i%6) ==0)
+            System.out.print(i + " ");
+            i++;
+            if (i==200) break;
+        }
+    }
+
     static void printJAVA(){
         final String stringJavaUpper = " \tJ\t\t A\t\tV\t\tV\t\tA \n \tJ\t    A A\t\t  V\t  V\t       A A\t \n";
         final String stringJavaUnder = "J \tJ\t   AAAAA\t   V V\t      AAAAA \n J J\t  A\t\tA\t\tV\t\t A\t   A";
@@ -61,7 +70,7 @@ public class Print {
         //printJAVA(); //1
         //converCeltoFah(); //2
         //ba();
-        seven();
-
+        //seven();
+        eight();
     }
 }
